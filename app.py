@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # 1. Configuração da Página
-st.set_page_config(page_title="Busca de Mandados - MG", layout="wide")
-st.title("SGT WANDERSON - 84 CIA TM / 39 BPM")
+st.set_page_config(page_title="Sgt Wanderson Busca de Mandados - MG", layout="wide")
 st.title("🔎 Busca de Mandados - MG")
 
 # 2. Função de Leitura e Limpeza dos Dados
@@ -133,3 +132,4 @@ if not df.empty:
 else:
 
     st.warning("Nenhum dado carregado.")
+
