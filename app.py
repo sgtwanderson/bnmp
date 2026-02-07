@@ -3,7 +3,8 @@ import pandas as pd
 
 # 1. Configuração da Página
 st.set_page_config(page_title="Busca de Mandados - MG", layout="wide")
-st.title("🔎84ª CIA TM Busca de Mandados - MG")
+st.title("SGT WANDERSON - 84 CIA TM / 39 BPM")
+st.title("🔎 Busca de Mandados - MG")
 
 # 2. Função de Leitura e Limpeza dos Dados
 @st.cache_data
@@ -130,4 +131,5 @@ if not df.empty:
     st.dataframe(df_filtrado[colunas_finais], use_container_width=True, hide_index=True)
 
 else:
+
     st.warning("Nenhum dado carregado.")
